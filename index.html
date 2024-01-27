@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js" defer></script>
+    <title>LA Mountains</title>
+  </head>
+  <body>
+    <!------------------- HEADER ------------------->
+    <header>
+      <div id="logo">
+        <img src="assets/img/logo.png" alt="logo-image" />
+        <h4>LOSANGELES<br /><span class="m">MOUNTAINS</span></h4>
+      </div>
+
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="nav-icon"></span
+      ></label>
+
+      <ul class="nav-list menu">
+        <li><a href="#history" class="nav-link">01. HISTORY</a></li>
+        <li><a href="#team" class="nav-link" id="link">02. TEAM</a></li>
+      </ul>
+    </header>
+    
+    <main>
+      <div class="home"></div>
+        <!------------------- HISTORY ------------------->
+      <div class="history" id="history">
+        <div class="history-text">
+          <div class="wrapper">
+            <h1>01.</h1>
+            <h3>HISTORY</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum
+              a accusantium quae vitae, suscipit animi deleniti eius dolore aut
+              pariatur, numquam debitis fugit id illo doloremque quo nisi,
+              voluptatem tempore adipisci? Explicabo, officia dolores?
+            </p>
+          </div>
+        </div>
+        
+        <section class="container">
+          <div class="slide-wrap">
+            <div class="slide-container">
+              <div class="slides fade">
+                <img src="assets/img/c2.png" alt="tourist on a mountain top image" class="slide" />
+              </div>
+              <div class="slides fade">
+                <img src="assets/img/c1.png" alt="mountain image" class="slide" />
+              </div>
+              <div class="slides fade">
+                <img src="assets/img/c2.png" alt="tourist on a mountain top image" class="slide" />
+              </div>
+              <div class="slides fade">
+                <img src="assets/img/c1.png" alt="mountain image" class="slide" />
+              </div>
+              <div class="arrow">
+                <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+                <a class="next" onclick="nextSlide(1)">&#10095;</a>
+              </div>
+            </div>
+            <br />
+            <div class="dot-wrap">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+          </div>
+        </section>
+      </div>
+        <!------------------- TEAM ------------------->
+      <div class="team" id="team">
+        <div class="team-text">
+          <div class="wrapper">
+            <h1>02.</h1>
+            <h3>CLIMB</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio tenetur hic eaque repudiandae modi tempora!
+            </p>
+          </div>
+        </div>
+
+        <div class="mountains">
+          <div class="wrapper">
+            <div>
+              <button onclick="change()" class="tab-btn">MOUNTAIN 1</button>
+              <button onclick="changeback()" class="tab-btn">MOUNTAIN 2</button>
+            </div>
+          </div>
+
+          <div class="tab-content">
+            <div class="content">
+              <div class="schedule">
+                <h3>SCHEDULE</h3>
+                <div class="grid">
+                  <div class="dates">
+                    <p>25 Nov 2016</p>
+                    <p>28 Nov 2016</p>
+                    <br />
+                    <p>18 Dec 2016</p>
+                    <br />
+                    <p>7 Jan 2017</p>
+                  </div>
+                  <div class="teams">
+                    <p>Vestibulum vierra</p>
+                    <p>Vestibulum vierra</p>
+                    <br />
+                    <p>Vestibulum vierra</p>
+                    <br />
+                    <p>Vestibulum vierra</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="schedule">
+                <h3>SCHEDULE</h3>
+                <div class="grid">
+                  <div class="dates">
+                    <p>17 Nov 2016</p>
+                    <br />
+                    <p>13 Dec 2016</p>
+                    <p>28 Dec 2016</p>
+                    <br />
+                    <p>9 Feb 2017</p>
+                  </div>
+                  <div class="teams">
+                    <p>Vestibulum vierra</p>
+                    <br />
+                    <p>Vestibulum vierra</p>
+                    <p>Vestibulum vierra</p>
+                    <br />
+                    <p>Vestibulum vierra</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc">
+          <div class="acc-wrapper">
+            <div class="acc-box" onclick="change()">
+              <div class="acc-head">
+                <p>MOUNTAIN 1</p>
+              </div>
+              <div class="acc-text">
+                <div class="schedule">
+                  <h3>SCHEDULE</h3>
+                  <div class="grid">
+                    <div class="dates">
+                      <p>25 Nov 2016</p>
+                      <p>28 Nov 2016</p>
+                      <br />
+                      <p>18 Dec 2016</p>
+                      <br />
+                      <p>7 Jan 2017</p>
+                    </div>
+                    <div class="teams">
+                      <p>Vestibulum vierra</p>
+                      <p>Vestibulum vierra</p>
+                      <br />
+                      <p>Vestibulum vierra</p>
+                      <br />
+                      <p>Vestibulum vierra</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="acc-box" onclick="changeback()">
+              <div class="acc-head">
+                <p>MOUNTAIN 2</p>
+              </div>
+              <div class="acc-text">
+                <div class="schedule">
+                  <h3>SCHEDULE</h3>
+                  <div class="grid">
+                    <div class="dates">
+                      <p>17 Nov 2016</p>
+                      <br />
+                      <p>13 Dec 2016</p>
+                      <p>28 Dec 2016</p>
+                      <br />
+                      <p>9 Feb 2017</p>
+                    </div>
+                    <div class="teams">
+                      <p>Vestibulum vierra</p>
+                      <br />
+                      <p>Vestibulum vierra</p>
+                      <p>Vestibulum vierra</p>
+                      <br />
+                      <p>Vestibulum vierra</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--------- SCROLL UP ---------->
+    <a href="#" class="scroll-up" id="scroll-up">
+      <i class="fa-solid fa-mountain"></i>
+    </a>
+
+    <!------------------- FOOTER ------------------->
+
+    <footer>
+      <div>
+        <div id="logo"><img src="assets/img/logo.png" alt="logo-image" /></div>
+        <h4>LOSANGELES<br /><span class="m">MOUNTAINS</span></h4>
+      </div>
+      <p>COPYRIGHT 2016. ALL RIGHTS RESERVED.</p>
+    </footer>
+  </body>
+</html>
